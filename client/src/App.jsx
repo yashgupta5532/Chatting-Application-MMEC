@@ -19,6 +19,7 @@ const App = () => {
           <Route element={<ProtectRoute user={user} />}>
             <Route path="/" element={<Home />} />
             <Route path="/chat/:chatId" element={<Chat />} />
+            <Route path="/groups" element={<Group />} />
           </Route>
           <Route
             path="/login"
